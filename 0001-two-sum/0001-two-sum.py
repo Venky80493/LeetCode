@@ -5,7 +5,6 @@ class Solution:
             diff=target-nums[i]
             if diff in traversed_nums:
                 return [traversed_nums[diff],i]
-            else:
-                traversed_nums[nums[i]]=i
+            traversed_nums[nums[i]]=i
         return False
             
